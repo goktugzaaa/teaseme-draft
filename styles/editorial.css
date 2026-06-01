@@ -1137,7 +1137,27 @@ h1, h2, h3 { letter-spacing: -0.02em; }
   padding-left: 3px;
 }
 
-/* SMS variant */
+/* Screenshot variant (real customer DM images) */
+.receipt--screenshot { background: #0c0c0c; }
+
+.receipt__shot {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3);
+  min-height: 0;
+}
+
+.receipt__shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 360px;
+  border-radius: var(--radius-sm);
+}
+
+/* SMS variant (legacy HTML mock — kept for reference) */
 .receipt--sms { background: var(--c-bg-alt); }
 
 .receipt__sms {
