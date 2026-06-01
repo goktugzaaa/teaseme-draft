@@ -31,6 +31,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/sections.css">
+  <link rel="stylesheet" href="styles/editorial.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/logo.png">
@@ -149,107 +150,142 @@
     </video>
   </div>
 
-  <div class="hero__inner">
-    <span class="eyebrow">Hand-made in Georgia, USA · Shipped discreetly</span>
-    <h1>Brazilian Sex Chocolate — Hand-Made Aphrodisiac Truffles</h1>
-    <p class="hero__sub">Feel it in 30 minutes. Or your money back.</p>
+  <div class="hero__overlay" aria-hidden="true"></div>
 
-    <div class="hero__price">
-      <span class="hero__price-current">From $39.95</span>
-      <span class="hero__price-compare">$59.95</span>
-      <span class="hero__price-save">Save up to 30%</span>
+  <div class="hero__grid">
+    <div class="hero__lead">
+      <span class="hero__eyebrow">Brazilian Sex Chocolate · Est. 2021</span>
+      <h1 class="hero__title">
+        <span class="hero__title-line">The pleasure</span>
+        <span class="hero__title-line hero__title-line--em">you always</span>
+        <span class="hero__title-line">wanted.</span>
+      </h1>
+      <p class="hero__tagline">Feel it in 30 minutes. Or your money back.</p>
     </div>
 
-    <div class="hero__actions">
-      <a class="btn btn--primary btn--large" href="#buy">Shop Tease</a>
-      <a class="btn btn--ghost btn--large" href="#ritual">How It Works</a>
-    </div>
+    <div class="hero__foot">
+      <div class="hero__cta-block">
+        <div class="hero__price">
+          <span class="hero__price-current">$39.95</span>
+          <span class="hero__price-compare">$59.95</span>
+        </div>
+        <a class="btn btn--primary btn--large hero__cta" href="#buy">
+          <span>Shop Tease</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg>
+        </a>
+      </div>
 
-    <ul class="hero__trust" aria-label="Trust signals">
-      <li>500,000+ truffles enjoyed</li>
-      <li>30,000+ customers</li>
-      <li>★ 4.8 / 1,247 reviews</li>
-      <li>FDA-approved · Discreet shipping</li>
-    </ul>
+      <ul class="hero__meta" aria-label="Trust signals">
+        <li><strong>500K+</strong> truffles enjoyed</li>
+        <li><strong>★ 4.8</strong> · 1,247 reviews</li>
+        <li><strong>FDA</strong> approved</li>
+        <li><strong>Discreet</strong> shipping</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <span class="hero__scroll-line"></span>
   </div>
 </section>
 
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__item">Hand-made in Georgia</span>
+    <span class="marquee__dot">✦</span>
+    <span class="marquee__item">500,000+ truffles enjoyed</span>
+    <span class="marquee__dot">✦</span>
+    <span class="marquee__item">Discreet, unbranded shipping</span>
+    <span class="marquee__dot">✦</span>
+    <span class="marquee__item">★ 4.8 from 1,247 reviews</span>
+    <span class="marquee__dot">✦</span>
+    <span class="marquee__item">7-day money-back guarantee</span>
+    <span class="marquee__dot">✦</span>
+    <span class="marquee__item">Hand-made in Georgia</span>
+    <span class="marquee__dot">✦</span>
+    <span class="marquee__item">500,000+ truffles enjoyed</span>
+    <span class="marquee__dot">✦</span>
+    <span class="marquee__item">Discreet, unbranded shipping</span>
+    <span class="marquee__dot">✦</span>
+    <span class="marquee__item">★ 4.8 from 1,247 reviews</span>
+    <span class="marquee__dot">✦</span>
+    <span class="marquee__item">7-day money-back guarantee</span>
+    <span class="marquee__dot">✦</span>
+  </div>
+</div>
+
 <!-- ============ BUNDLE / BUY ============ -->
-<section class="section bundles" id="buy" aria-labelledby="buyTitle">
+<section class="section buy" id="buy" aria-labelledby="buyTitle">
   <div class="container">
-    <header class="section-header">
-      <span class="eyebrow">Choose Your Box</span>
-      <h2 id="buyTitle">Stock Up. Save Big.</h2>
-      <p class="text-muted">Most customers reorder within 3 weeks. Bundle now and save up to 30%.</p>
-      <div class="divider-thin"></div>
+    <header class="section-mark">
+      <span class="section-mark__num">III.</span>
+      <h2 id="buyTitle" class="section-mark__title">Order.</h2>
     </header>
 
-    <div class="bundles__grid">
-      <article class="bundle">
-        <h3 class="bundle__name">Single</h3>
-        <div class="bundle__qty">1 Box · 4 truffles</div>
-        <div class="bundle__price">
-          <span class="bundle__price-current">$39.95</span>
-          <span class="bundle__price-compare">$59.95</span>
+    <div class="buy__layout">
+      <figure class="buy__hero">
+        <img src="assets/images/TEASE_BOX_D.jpg" alt="Tease Brazilian Sex Chocolate box — 4 hand-made truffles" loading="lazy">
+      </figure>
+
+      <div class="buy__panel">
+        <span class="buy__variants-label">Pick your flavor</span>
+        <div class="buy__variants" role="radiogroup" aria-label="Choose flavor">
+          <button class="variant-pill" data-active="true" type="button" role="radio" aria-checked="true">Milk Chocolate</button>
+          <button class="variant-pill" type="button" role="radio" aria-checked="false">Espresso</button>
         </div>
-        <span class="bundle__per">$9.99 / truffle</span>
-        <ul class="bundle__perks">
-          <li>1 perfect night</li>
-          <li>Discreet shipping</li>
-          <li>7-day money-back</li>
+
+        <ul class="tiers" role="radiogroup" aria-label="Choose quantity">
+          <li class="tier" data-active="false">
+            <input type="radio" name="tier" id="tier-1" class="sr-only">
+            <label for="tier-1" class="tier__label">
+              <span class="tier__qty">1 box</span>
+              <span class="tier__details">4 truffles · $9.99 ea.</span>
+              <span class="tier__price">$39.95</span>
+            </label>
+          </li>
+
+          <li class="tier" data-active="true">
+            <input type="radio" name="tier" id="tier-2" class="sr-only" checked>
+            <label for="tier-2" class="tier__label">
+              <span class="tier__flag">Most Popular · Save 20%</span>
+              <span class="tier__qty">2 boxes</span>
+              <span class="tier__details">8 truffles · $7.99 ea. · Free ship</span>
+              <span class="tier__price">
+                <s>$79.90</s>
+                <strong>$63.92</strong>
+              </span>
+            </label>
+          </li>
+
+          <li class="tier" data-active="false">
+            <input type="radio" name="tier" id="tier-3" class="sr-only">
+            <label for="tier-3" class="tier__label">
+              <span class="tier__flag tier__flag--gold">Best Value · Save 30%</span>
+              <span class="tier__qty">3 boxes</span>
+              <span class="tier__details">12 truffles · $6.99 ea. · Free priority</span>
+              <span class="tier__price">
+                <s>$119.85</s>
+                <strong>$83.90</strong>
+              </span>
+            </label>
+          </li>
         </ul>
-        <a class="btn btn--ghost btn--large bundle__cta" href="/cart/add?id=single">Add to Cart</a>
-      </article>
 
-      <article class="bundle bundle--featured">
-        <span class="bundle__badge">Most Popular</span>
-        <h3 class="bundle__name">Duo</h3>
-        <div class="bundle__qty">2 Boxes · 8 truffles</div>
-        <div class="bundle__price">
-          <span class="bundle__price-current">$63.92</span>
-          <span class="bundle__price-compare">$79.90</span>
-        </div>
-        <span class="bundle__per">$7.99 / truffle · <strong>Save 20%</strong></span>
-        <ul class="bundle__perks">
-          <li>2 nights to remember</li>
-          <li>Free shipping</li>
-          <li>Discreet packaging</li>
-          <li>7-day money-back</li>
+        <a class="btn btn--primary btn--large buy__cta" href="/cart/add?id=duo">
+          <span>Add to Cart</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg>
+        </a>
+
+        <ul class="buy__assurance">
+          <li>Hand-made · Georgia, USA</li>
+          <li>FDA-approved facility</li>
+          <li>Ships in 3–7 business days</li>
+          <li>Discreet, unbranded packaging</li>
+          <li>7-day money-back guarantee</li>
         </ul>
-        <a class="btn btn--primary btn--large bundle__cta" href="/cart/add?id=duo">Add to Cart</a>
-      </article>
-
-      <article class="bundle">
-        <span class="bundle__badge bundle__badge--gold">Best Value</span>
-        <h3 class="bundle__name">Triple</h3>
-        <div class="bundle__qty">3 Boxes · 12 truffles</div>
-        <div class="bundle__price">
-          <span class="bundle__price-current">$83.90</span>
-          <span class="bundle__price-compare">$119.85</span>
-        </div>
-        <span class="bundle__per">$6.99 / truffle · <strong>Save 30%</strong></span>
-        <ul class="bundle__perks">
-          <li>3 unforgettable encounters</li>
-          <li>FREE priority shipping</li>
-          <li>Free flavor upgrade</li>
-          <li>Discreet packaging</li>
-          <li>7-day money-back</li>
-        </ul>
-        <a class="btn btn--ghost btn--large bundle__cta" href="/cart/add?id=triple">Add to Cart</a>
-      </article>
-    </div>
-
-    <div class="bundles__variants" role="radiogroup" aria-label="Choose flavor">
-      <span class="bundles__variants-label">Flavor:</span>
-      <button class="variant-pill" data-active="true" type="button" role="radio" aria-checked="true">Milk Chocolate</button>
-      <button class="variant-pill" type="button" role="radio" aria-checked="false">Espresso</button>
-    </div>
-
-    <div class="bundles__assurance">
-      <span>✓ Hand-made in Georgia, USA</span>
-      <span>✓ FDA-approved facility</span>
-      <span>✓ Ships in 3–7 business days</span>
-      <span>✓ Discreet, unbranded packaging</span>
+      </div>
     </div>
   </div>
 </section>
@@ -257,76 +293,81 @@
 <!-- ============ RITUAL ============ -->
 <section class="section ritual" id="ritual" aria-labelledby="ritualTitle">
   <div class="container">
-    <header class="section-header">
-      <span class="eyebrow">How It Works</span>
-      <h2 id="ritualTitle">The Ritual</h2>
-      <p class="text-muted">Three steps. One experience.</p>
-      <div class="divider-thin"></div>
+    <header class="section-mark">
+      <span class="section-mark__num">I.</span>
+      <h2 id="ritualTitle" class="section-mark__title">The Ritual</h2>
     </header>
 
-    <div class="ritual__grid">
-      <article class="ritual__step">
-        <div class="ritual__num">01</div>
-        <h3>Order</h3>
-        <p>Order in time for your next encounter. Free shipping on 2+ boxes.</p>
-      </article>
-      <article class="ritual__step">
-        <div class="ritual__num">02</div>
-        <h3>Receive</h3>
-        <p>Hand-made and shipped discreetly in 3–7 business days. No branding. Ever.</p>
-      </article>
-      <article class="ritual__step">
-        <div class="ritual__num">03</div>
-        <h3>Experience</h3>
-        <p>Enjoy one truffle 30 minutes before intimacy. Effects last 1–3 hours, and strengthen with consistent use.</p>
-      </article>
-    </div>
+    <ol class="ritual__list">
+      <li class="ritual__row">
+        <span class="ritual__numeral">01</span>
+        <div class="ritual__copy">
+          <h3>Order in time.</h3>
+          <p>Place your order before the night you want it. Free shipping on two boxes or more.</p>
+        </div>
+      </li>
+      <li class="ritual__row">
+        <span class="ritual__numeral">02</span>
+        <div class="ritual__copy">
+          <h3>Receive in private.</h3>
+          <p>Hand-made and shipped discreetly in 3–7 business days. No branding on the outside. Ever.</p>
+        </div>
+      </li>
+      <li class="ritual__row">
+        <span class="ritual__numeral">03</span>
+        <div class="ritual__copy">
+          <h3>Experience in full.</h3>
+          <p>One truffle, thirty minutes before. Effects last 1–3 hours, with afterglow up to a day.</p>
+        </div>
+      </li>
+    </ol>
   </div>
 </section>
 
 <!-- ============ INGREDIENTS ============ -->
 <section class="section ingredients" id="ingredients" aria-labelledby="ingredientsTitle">
   <div class="container">
-    <header class="section-header">
-      <span class="eyebrow">What's Inside</span>
-      <h2 id="ingredientsTitle">Three Aphrodisiac Herbs, One Truffle</h2>
-      <p>Time-tested aphrodisiac herbs, folded into Barry Callebaut chocolate. No banned substances. No synthetic stimulants.</p>
-      <div class="divider-thin"></div>
+    <header class="section-mark section-mark--light">
+      <span class="section-mark__num">II.</span>
+      <h2 id="ingredientsTitle" class="section-mark__title">What's Inside</h2>
     </header>
 
-    <div class="ingredients__grid">
-      <article class="ingredient">
-        <div class="ingredient__media">
-          <img src="assets/images/TRUFFLE_ESPRESSO.jpg" alt="Fadogia Agrestis truffle — espresso variant" loading="lazy">
-        </div>
-        <div class="ingredient__body">
-          <span class="ingredient__origin">West African Shrub</span>
-          <h3>Fadogia Agrestis</h3>
-          <p>Traditionally used to support male vitality and libido. Studied for its impact on testosterone and stamina.</p>
-        </div>
-      </article>
+    <p class="ingredients__lede">
+      Three time-tested aphrodisiac herbs, folded into Barry Callebaut chocolate.
+      <em>No banned substances. No synthetic stimulants. No shortcuts.</em>
+    </p>
 
-      <article class="ingredient">
-        <div class="ingredient__media">
-          <img src="assets/images/TRUFFLE_MILK_CHOC.jpg" alt="Tongkat Ali truffle — milk chocolate variant" loading="lazy">
-        </div>
-        <div class="ingredient__body">
-          <span class="ingredient__origin">Southeast Asian Root</span>
-          <h3>Tongkat Ali</h3>
-          <p>A centuries-old aphrodisiac valued for boosting energy, mood, and sexual performance — for all genders.</p>
-        </div>
-      </article>
+    <div class="ingredient-row">
+      <figure class="ingredient-row__media">
+        <img src="assets/images/TRUFFLE_ESPRESSO.jpg" alt="Fadogia Agrestis — espresso truffle" loading="lazy">
+      </figure>
+      <div class="ingredient-row__copy">
+        <span class="ingredient-row__index">01 — West African Shrub</span>
+        <h3 class="ingredient-row__name">Fadogia<br>Agrestis.</h3>
+        <p>Traditionally used to support male vitality and libido. Studied for its impact on testosterone and stamina.</p>
+      </div>
+    </div>
 
-      <article class="ingredient">
-        <div class="ingredient__media">
-          <img src="assets/images/NUTRITION_FACTS.jpg" alt="Ginger ingredient — nutrition facts" loading="lazy">
-        </div>
-        <div class="ingredient__body">
-          <span class="ingredient__origin">Tropical Rhizome</span>
-          <h3>Ginger</h3>
-          <p>Warming, circulation-enhancing, and known across cultures as a natural arousal stimulant.</p>
-        </div>
-      </article>
+    <div class="ingredient-row ingredient-row--reverse">
+      <figure class="ingredient-row__media">
+        <img src="assets/images/TRUFFLE_MILK_CHOC.jpg" alt="Tongkat Ali — milk chocolate truffle" loading="lazy">
+      </figure>
+      <div class="ingredient-row__copy">
+        <span class="ingredient-row__index">02 — Southeast Asian Root</span>
+        <h3 class="ingredient-row__name">Tongkat<br>Ali.</h3>
+        <p>A centuries-old aphrodisiac. Valued for boosting energy, mood, and sexual performance — for all genders.</p>
+      </div>
+    </div>
+
+    <div class="ingredient-row">
+      <figure class="ingredient-row__media">
+        <img src="assets/images/NUTRITION_FACTS.jpg" alt="Ginger ingredient detail" loading="lazy">
+      </figure>
+      <div class="ingredient-row__copy">
+        <span class="ingredient-row__index">03 — Tropical Rhizome</span>
+        <h3 class="ingredient-row__name">Ginger.</h3>
+        <p>Warming. Circulation-enhancing. Known across cultures as a natural arousal stimulant.</p>
+      </div>
     </div>
 
     <p class="ingredients__footnote">Not gluten-free. May contain nuts. Limit 2 truffles per person, per day.</p>
@@ -334,61 +375,57 @@
 </section>
 
 <!-- ============ SCENARIOS ============ -->
-<section class="section scenarios" aria-labelledby="scenariosTitle">
-  <div class="container">
-    <header class="section-header">
-      <span class="eyebrow">Made for the Moment</span>
-      <h2 id="scenariosTitle">When Tease Hits Different</h2>
-      <p class="text-muted">One bite. Endless possibilities.</p>
-      <div class="divider-thin"></div>
-    </header>
+<section class="scenarios" aria-labelledby="scenariosTitle">
+  <header class="container section-mark">
+    <span class="section-mark__num">IV.</span>
+    <h2 id="scenariosTitle" class="section-mark__title">Made for<br>the moment.</h2>
+  </header>
 
-    <div class="scenarios__grid">
-      <article class="scenario">
-        <div class="scenario__media">
-          <img src="assets/images/LIFESTYLE_A.jpg" alt="Tease for date night" loading="lazy">
-        </div>
-        <div class="scenario__body">
-          <span class="scenario__tag">Date Night</span>
-          <h3>Turn dinner into dessert.</h3>
-          <p>One truffle 30 minutes before. By the time the check arrives, the night has already started.</p>
-        </div>
-      </article>
-
-      <article class="scenario">
-        <div class="scenario__media">
-          <img src="assets/images/LIFESTYLE_B.jpg" alt="Tease for first time" loading="lazy">
-        </div>
-        <div class="scenario__body">
-          <span class="scenario__tag">First Time</span>
-          <h3>Less nerves. More you.</h3>
-          <p>A subtle confidence boost that takes the edge off — without the next-day fog of anything pharmaceutical.</p>
-        </div>
-      </article>
-
-      <article class="scenario">
-        <div class="scenario__media">
-          <img src="assets/images/LIFESTYLE_C.jpg" alt="Tease for long-term spark" loading="lazy">
-        </div>
-        <div class="scenario__body">
-          <span class="scenario__tag">Long-Term Spark</span>
-          <h3>Rewrite the routine.</h3>
-          <p>For couples who already have everything except the time and the spark. Tease brings the second one back.</p>
-        </div>
-      </article>
+  <article class="scene">
+    <figure class="scene__media">
+      <img src="assets/images/LIFESTYLE_A.jpg" alt="Date night with Tease" loading="lazy">
+    </figure>
+    <div class="scene__copy">
+      <span class="scene__num">01</span>
+      <span class="scene__tag">Date Night</span>
+      <h3>Turn dinner<br>into dessert.</h3>
+      <p>One truffle, thirty minutes before. By the time the check arrives, the night has already started.</p>
     </div>
-  </div>
+  </article>
+
+  <article class="scene scene--reverse">
+    <figure class="scene__media">
+      <img src="assets/images/LIFESTYLE_B.jpg" alt="First time with Tease" loading="lazy">
+    </figure>
+    <div class="scene__copy">
+      <span class="scene__num">02</span>
+      <span class="scene__tag">First Time</span>
+      <h3>Less nerves.<br>More you.</h3>
+      <p>A subtle confidence boost that takes the edge off — without the next-day fog of anything pharmaceutical.</p>
+    </div>
+  </article>
+
+  <article class="scene">
+    <figure class="scene__media">
+      <img src="assets/images/LIFESTYLE_C.jpg" alt="Long-term spark with Tease" loading="lazy">
+    </figure>
+    <div class="scene__copy">
+      <span class="scene__num">03</span>
+      <span class="scene__tag">Long-Term Spark</span>
+      <h3>Rewrite<br>the routine.</h3>
+      <p>For the couples who already have everything except the time — and the spark. Tease brings the second one back.</p>
+    </div>
+  </article>
 </section>
 
 <!-- ============ UGC / TIKTOK ============ -->
 <section class="section ugc" aria-labelledby="ugcTitle">
   <div class="container">
-    <header class="section-header">
-      <span class="eyebrow">Real People · Real Reactions</span>
-      <h2 id="ugcTitle">As Seen on TikTok</h2>
-      <p class="text-muted">Hundreds of unfiltered reactions from real customers.</p>
-      <div class="divider-thin"></div>
+    <header class="section-mark">
+      <span class="section-mark__num">V.</span>
+      <h2 id="ugcTitle" class="section-mark__title">As seen on<br>TikTok.</h2>
     </header>
+    <p class="ugc__lede">Hundreds of unfiltered reactions from real customers.</p>
 
     <div class="ugc__grid">
       <a class="ugc__item" href="#" aria-label="TikTok video 1">
@@ -428,127 +465,120 @@
 <!-- ============ COMPARE ============ -->
 <section class="section compare" aria-labelledby="compareTitle">
   <div class="container">
-    <header class="section-header">
-      <span class="eyebrow">No Competition</span>
-      <h2 id="compareTitle">Why Tease</h2>
-      <p class="text-muted">Not every aphrodisiac product is created equal.</p>
-      <div class="divider-thin"></div>
+    <header class="section-mark">
+      <span class="section-mark__num">VI.</span>
+      <h2 id="compareTitle" class="section-mark__title">No competition.</h2>
     </header>
 
-    <div class="compare__table" role="table" aria-label="Tease vs Other Brands">
+    <div class="compare__table" role="table" aria-label="Tease compared to other brands">
       <div class="compare__head" role="row">
-        <span class="compare__feature">Feature</span>
-        <span>Tease</span>
-        <span>Others</span>
+        <span></span>
+        <span class="compare__head-tease">tease.</span>
+        <span class="compare__head-other"><em>others.</em></span>
       </div>
 
       <div class="compare__row" role="row">
         <span class="compare__feature">No banned substances</span>
-        <span class="compare__cell compare__cell--yes" aria-label="Yes">✓</span>
-        <span class="compare__cell compare__cell--no" aria-label="No">✕</span>
+        <span class="compare__cell compare__cell--yes" aria-label="Tease: yes">●</span>
+        <span class="compare__cell compare__cell--no" aria-label="Others: no">—</span>
       </div>
       <div class="compare__row" role="row">
         <span class="compare__feature">Only herbal ingredients</span>
-        <span class="compare__cell compare__cell--yes" aria-label="Yes">✓</span>
-        <span class="compare__cell compare__cell--no" aria-label="No">✕</span>
+        <span class="compare__cell compare__cell--yes" aria-label="Tease: yes">●</span>
+        <span class="compare__cell compare__cell--no" aria-label="Others: no">—</span>
       </div>
       <div class="compare__row" role="row">
         <span class="compare__feature">Authentic Brazilian recipe</span>
-        <span class="compare__cell compare__cell--yes" aria-label="Yes">✓</span>
-        <span class="compare__cell compare__cell--no" aria-label="No">✕</span>
+        <span class="compare__cell compare__cell--yes" aria-label="Tease: yes">●</span>
+        <span class="compare__cell compare__cell--no" aria-label="Others: no">—</span>
       </div>
       <div class="compare__row" role="row">
         <span class="compare__feature">Hand-made to order</span>
-        <span class="compare__cell compare__cell--yes" aria-label="Yes">✓</span>
-        <span class="compare__cell compare__cell--no" aria-label="No">✕</span>
+        <span class="compare__cell compare__cell--yes" aria-label="Tease: yes">●</span>
+        <span class="compare__cell compare__cell--no" aria-label="Others: no">—</span>
       </div>
       <div class="compare__row" role="row">
         <span class="compare__feature">Premium Barry Callebaut chocolate</span>
-        <span class="compare__cell compare__cell--yes" aria-label="Yes">✓</span>
-        <span class="compare__cell compare__cell--no" aria-label="No">✕</span>
+        <span class="compare__cell compare__cell--yes" aria-label="Tease: yes">●</span>
+        <span class="compare__cell compare__cell--no" aria-label="Others: no">—</span>
       </div>
       <div class="compare__row" role="row">
         <span class="compare__feature">Never arrives melted</span>
-        <span class="compare__cell compare__cell--yes" aria-label="Yes">✓</span>
-        <span class="compare__cell compare__cell--no" aria-label="No">✕</span>
+        <span class="compare__cell compare__cell--yes" aria-label="Tease: yes">●</span>
+        <span class="compare__cell compare__cell--no" aria-label="Others: no">—</span>
       </div>
       <div class="compare__row" role="row">
         <span class="compare__feature">Money-back guarantee</span>
-        <span class="compare__cell compare__cell--yes" aria-label="Yes">✓</span>
-        <span class="compare__cell compare__cell--no" aria-label="No">✕</span>
+        <span class="compare__cell compare__cell--yes" aria-label="Tease: yes">●</span>
+        <span class="compare__cell compare__cell--no" aria-label="Others: no">—</span>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ TESTIMONIALS ============ -->
-<section class="section testimonials" id="reviews" aria-labelledby="reviewsTitle">
+<section class="reviews" id="reviews" aria-labelledby="reviewsTitle">
   <div class="container">
-    <header class="section-header">
-      <span class="eyebrow">Reviews</span>
-      <h2 id="reviewsTitle">Trusted by 30,000+</h2>
-      <div class="testimonials__rating">
-        <span class="stars" aria-hidden="true">★★★★★</span>
-        <span><strong>4.8</strong> · 1,247 verified reviews</span>
-      </div>
-      <div class="divider-thin"></div>
+    <header class="section-mark section-mark--light">
+      <span class="section-mark__num">VII.</span>
+      <h2 id="reviewsTitle" class="section-mark__title">She said.<br>He said.</h2>
     </header>
 
-    <div class="testimonials__grid">
-      <figure class="testimonial">
-        <blockquote class="testimonial__quote">"Yes these chocolates work — and they are so delicious. After eating one, you will have multiple orgasms. I'm a customer for life."</blockquote>
-        <figcaption class="testimonial__attr">
-          <strong>Sarah M.</strong>
-          Verified Buyer
-        </figcaption>
-      </figure>
+    <figure class="reviews__hero">
+      <blockquote class="reviews__hero-quote">
+        “Yes these chocolates work — and they are so delicious. After eating one, you will have <em>multiple orgasms</em>. I'm a customer for life.”
+      </blockquote>
+      <figcaption class="reviews__hero-attr">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <strong>Sarah M.</strong>
+        <span>Verified Buyer · New York</span>
+      </figcaption>
+    </figure>
 
-      <figure class="testimonial">
-        <blockquote class="testimonial__quote">"We tried Tease for date night and it completely changed the energy. Subtle, fast, and the taste is incredible."</blockquote>
-        <figcaption class="testimonial__attr">
-          <strong>Daniel R.</strong>
-          Verified Buyer
-        </figcaption>
-      </figure>
+    <ul class="reviews__more">
+      <li>
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p>“We tried Tease for date night and it completely changed the energy. Subtle, fast, and the taste is incredible.”</p>
+        <span>Daniel R.</span>
+      </li>
+      <li>
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p>“I was skeptical at first. After the first truffle, I wasn't anymore. Confidence and connection — both up.”</p>
+        <span>Megan T.</span>
+      </li>
+      <li>
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p>“The packaging alone is luxury. The chocolate? Even better than the reviews say.”</p>
+        <span>Alex P.</span>
+      </li>
+    </ul>
 
-      <figure class="testimonial">
-        <blockquote class="testimonial__quote">"I was skeptical at first. After the first truffle, I wasn't anymore. Confidence and connection — both up."</blockquote>
-        <figcaption class="testimonial__attr">
-          <strong>Megan T.</strong>
-          Verified Buyer
-        </figcaption>
-      </figure>
-
-      <figure class="testimonial">
-        <blockquote class="testimonial__quote">"The packaging alone is luxury. The chocolate? Even better than the reviews say."</blockquote>
-        <figcaption class="testimonial__attr">
-          <strong>Alex P.</strong>
-          Verified Buyer
-        </figcaption>
-      </figure>
-    </div>
+    <p class="reviews__total"><strong>4.8</strong> from <strong>1,247</strong> verified reviews</p>
   </div>
 </section>
 
 <!-- ============ FOUNDER ============ -->
 <section class="section founder" aria-labelledby="founderTitle">
   <div class="container">
-    <div class="founder__inner">
-      <span class="eyebrow">From the Founder</span>
-      <h2 id="founderTitle">Made by Hand. Made With Intention.</h2>
-      <p class="founder__copy">"Tease was born from a simple idea: intimacy deserves better than pills and powders. We took a centuries-old Brazilian recipe, paired it with the finest chocolate in the world, and made it by hand — in Georgia, USA. Every box is a small batch. Every truffle is made to order."</p>
-      <span class="founder__signature">— The Tease Team</span>
-    </div>
+    <header class="section-mark">
+      <span class="section-mark__num">VIII.</span>
+      <h2 id="founderTitle" class="section-mark__title">From<br>the founder.</h2>
+    </header>
+
+    <blockquote class="founder__quote">
+      <em>“Intimacy deserves better than pills and powders.</em>
+      We took a centuries-old Brazilian recipe, paired it with the finest chocolate in the world, and made it by hand — in Georgia, USA. Every box is a small batch. Every truffle is made to order.”
+    </blockquote>
+    <span class="founder__signature">— The Tease Team</span>
   </div>
 </section>
 
 <!-- ============ FAQ ============ -->
 <section class="section faq" id="faq" aria-labelledby="faqTitle">
   <div class="container">
-    <header class="section-header">
-      <span class="eyebrow">Answers</span>
-      <h2 id="faqTitle">Frequently Asked Questions</h2>
-      <div class="divider-thin"></div>
+    <header class="section-mark">
+      <span class="section-mark__num">IX.</span>
+      <h2 id="faqTitle" class="section-mark__title">You asked.</h2>
     </header>
 
     <div class="faq__list">
@@ -620,14 +650,18 @@
 </section>
 
 <!-- ============ FINAL CTA ============ -->
-<section class="section final-cta" aria-labelledby="finalCtaTitle">
+<section class="final-cta" aria-labelledby="finalCtaTitle">
   <div class="container">
-    <div class="final-cta__inner">
-      <span class="eyebrow">Ready When You Are</span>
-      <h2 id="finalCtaTitle">Tonight Starts With One Bite</h2>
-      <p>Order in time for your next encounter. Hand-made, discreet, and shipped within 3–7 business days.</p>
-      <a class="btn btn--primary btn--large" href="/cart/add">Shop Tease — $39.95</a>
-    </div>
+    <h2 id="finalCtaTitle" class="final-cta__title">
+      <span>Tonight</span>
+      <span><em>starts</em> with</span>
+      <span>one bite.</span>
+    </h2>
+    <a class="btn btn--primary btn--large final-cta__btn" href="/cart/add">
+      <span>Shop Tease — From $39.95</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg>
+    </a>
+    <p class="final-cta__meta">Hand-made · Discreet shipping · 7-day money-back</p>
   </div>
 </section>
 
@@ -683,8 +717,10 @@
 
 <!-- ============ STICKY MOBILE CTA ============ -->
 <a class="sticky-cta" id="stickyCta" href="/cart/add" data-visible="false">
-  <span class="sticky-cta__label">Add to Cart</span>
-  <span><strong>$39.95</strong></span>
+  <span class="sticky-cta__price"><strong>$39.95</strong> <s>$59.95</s></span>
+  <span class="sticky-cta__label">Add to Cart
+    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg>
+  </span>
 </a>
 
 <!-- Scripts -->
