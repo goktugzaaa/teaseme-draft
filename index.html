@@ -121,15 +121,22 @@
         <img src="assets/images/logo.png" alt="Tease Me">
       </a>
       <nav class="nav__links" aria-label="Primary">
-        <a href="#ingredients">Ingredients</a>
         <a href="#buy">Shop</a>
+        <a href="#ingredients">Ingredients</a>
         <a href="#reviews">Reviews</a>
-        <a href="#faq">FAQ</a>
+        <a href="/pages/about">About</a>
+        <a href="/pages/contact">Contact</a>
       </nav>
-      <a class="nav__cart" href="/cart" aria-label="Cart">
-        <span>Cart</span>
-        <span aria-hidden="true">(0)</span>
-      </a>
+      <div class="nav__actions">
+        <a class="nav__icon-link" href="/account" aria-label="Account">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+        </a>
+        <a class="nav__cart" href="/cart" aria-label="Cart">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 6h15l-1.5 9H7.5L6 3H3"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+          <span>Cart</span>
+          <span aria-hidden="true">(0)</span>
+        </a>
+      </div>
     </div>
   </div>
 </header>
@@ -145,56 +152,104 @@
   <div class="hero__inner">
     <span class="eyebrow">Hand-made in Georgia, USA · Shipped discreetly</span>
     <h1>Brazilian Sex Chocolate — Hand-Made Aphrodisiac Truffles</h1>
-    <p class="hero__sub">Four hand-made truffles. Three natural aphrodisiac herbs. One unforgettable night.</p>
+    <p class="hero__sub">Feel it in 30 minutes. Or your money back.</p>
+
+    <div class="hero__price">
+      <span class="hero__price-current">From $39.95</span>
+      <span class="hero__price-compare">$59.95</span>
+      <span class="hero__price-save">Save up to 30%</span>
+    </div>
 
     <div class="hero__actions">
-      <a class="btn btn--primary btn--large" href="#buy">Shop Tease — $39.95</a>
+      <a class="btn btn--primary btn--large" href="#buy">Shop Tease</a>
       <a class="btn btn--ghost btn--large" href="#ritual">How It Works</a>
     </div>
 
     <ul class="hero__trust" aria-label="Trust signals">
-      <li>Over 100,000 truffles sold</li>
+      <li>500,000+ truffles enjoyed</li>
       <li>30,000+ customers</li>
-      <li>FDA-approved facility</li>
-      <li>7-day guarantee</li>
+      <li>★ 4.8 / 1,247 reviews</li>
+      <li>FDA-approved · Discreet shipping</li>
     </ul>
   </div>
 </section>
 
-<!-- ============ PRODUCT / BUY ============ -->
-<section class="section product" id="buy" aria-labelledby="buyTitle">
+<!-- ============ BUNDLE / BUY ============ -->
+<section class="section bundles" id="buy" aria-labelledby="buyTitle">
   <div class="container">
-    <div class="product__grid">
-      <div class="product__media">
-        <img src="assets/images/TEASE_BOX_D.jpg" alt="Tease Brazilian Sex Chocolate box — 4 truffles" loading="lazy">
-      </div>
+    <header class="section-header">
+      <span class="eyebrow">Choose Your Box</span>
+      <h2 id="buyTitle">Stock Up. Save Big.</h2>
+      <p class="text-muted">Most customers reorder within 3 weeks. Bundle now and save up to 30%.</p>
+      <div class="divider-thin"></div>
+    </header>
 
-      <div class="product__info">
-        <span class="eyebrow">Meet Tease</span>
-        <h2 id="buyTitle">Tease Chocolate — 4 Truffles per Box</h2>
-
-        <div class="product__price">
-          <span class="product__price-current">$39.95</span>
-          <span class="product__price-compare">$59.95</span>
+    <div class="bundles__grid">
+      <article class="bundle">
+        <h3 class="bundle__name">Single</h3>
+        <div class="bundle__qty">1 Box · 4 truffles</div>
+        <div class="bundle__price">
+          <span class="bundle__price-current">$39.95</span>
+          <span class="bundle__price-compare">$59.95</span>
         </div>
-        <span class="product__save">Save $20 · Free shipping on 2+ boxes</span>
-
-        <div class="product__variants" role="radiogroup" aria-label="Choose flavor">
-          <button class="variant-pill" data-active="true" type="button" role="radio" aria-checked="true">Milk Chocolate</button>
-          <button class="variant-pill" type="button" role="radio" aria-checked="false">Espresso</button>
-        </div>
-
-        <ul class="product__bullets">
-          <li>4 hand-made truffles per box</li>
-          <li>Take one 30 minutes before intimacy</li>
-          <li>Effects last 1–3 hours, up to 24 hours</li>
-          <li>Discreet, unbranded packaging</li>
-          <li>Free shipping on 2+ boxes</li>
-          <li>7-day money-back guarantee</li>
+        <span class="bundle__per">$9.99 / truffle</span>
+        <ul class="bundle__perks">
+          <li>1 perfect night</li>
+          <li>Discreet shipping</li>
+          <li>7-day money-back</li>
         </ul>
+        <a class="btn btn--ghost btn--large bundle__cta" href="/cart/add?id=single">Add to Cart</a>
+      </article>
 
-        <a class="btn btn--primary btn--large" href="/cart/add">Add to Cart — $39.95</a>
-      </div>
+      <article class="bundle bundle--featured">
+        <span class="bundle__badge">Most Popular</span>
+        <h3 class="bundle__name">Duo</h3>
+        <div class="bundle__qty">2 Boxes · 8 truffles</div>
+        <div class="bundle__price">
+          <span class="bundle__price-current">$63.92</span>
+          <span class="bundle__price-compare">$79.90</span>
+        </div>
+        <span class="bundle__per">$7.99 / truffle · <strong>Save 20%</strong></span>
+        <ul class="bundle__perks">
+          <li>2 nights to remember</li>
+          <li>Free shipping</li>
+          <li>Discreet packaging</li>
+          <li>7-day money-back</li>
+        </ul>
+        <a class="btn btn--primary btn--large bundle__cta" href="/cart/add?id=duo">Add to Cart</a>
+      </article>
+
+      <article class="bundle">
+        <span class="bundle__badge bundle__badge--gold">Best Value</span>
+        <h3 class="bundle__name">Triple</h3>
+        <div class="bundle__qty">3 Boxes · 12 truffles</div>
+        <div class="bundle__price">
+          <span class="bundle__price-current">$83.90</span>
+          <span class="bundle__price-compare">$119.85</span>
+        </div>
+        <span class="bundle__per">$6.99 / truffle · <strong>Save 30%</strong></span>
+        <ul class="bundle__perks">
+          <li>3 unforgettable encounters</li>
+          <li>FREE priority shipping</li>
+          <li>Free flavor upgrade</li>
+          <li>Discreet packaging</li>
+          <li>7-day money-back</li>
+        </ul>
+        <a class="btn btn--ghost btn--large bundle__cta" href="/cart/add?id=triple">Add to Cart</a>
+      </article>
+    </div>
+
+    <div class="bundles__variants" role="radiogroup" aria-label="Choose flavor">
+      <span class="bundles__variants-label">Flavor:</span>
+      <button class="variant-pill" data-active="true" type="button" role="radio" aria-checked="true">Milk Chocolate</button>
+      <button class="variant-pill" type="button" role="radio" aria-checked="false">Espresso</button>
+    </div>
+
+    <div class="bundles__assurance">
+      <span>✓ Hand-made in Georgia, USA</span>
+      <span>✓ FDA-approved facility</span>
+      <span>✓ Ships in 3–7 business days</span>
+      <span>✓ Discreet, unbranded packaging</span>
     </div>
   </div>
 </section>
@@ -278,32 +333,95 @@
   </div>
 </section>
 
-<!-- ============ GALLERY ============ -->
-<section class="section gallery" aria-labelledby="galleryTitle">
+<!-- ============ SCENARIOS ============ -->
+<section class="section scenarios" aria-labelledby="scenariosTitle">
   <div class="container">
     <header class="section-header">
       <span class="eyebrow">Made for the Moment</span>
-      <h2 id="galleryTitle">Tease, In the Wild</h2>
+      <h2 id="scenariosTitle">When Tease Hits Different</h2>
+      <p class="text-muted">One bite. Endless possibilities.</p>
       <div class="divider-thin"></div>
     </header>
 
-    <div class="gallery__grid">
-      <figure class="gallery__item">
-        <img src="assets/images/Tease_HandHero.jpg" alt="Hand holding a Tease truffle with red nails on a black background" loading="lazy">
-      </figure>
-      <figure class="gallery__item">
-        <img src="assets/images/LIFESTYLE_A.jpg" alt="Tease box on a beachside breakfast tray" loading="lazy">
-      </figure>
-      <figure class="gallery__item">
-        <img src="assets/images/LIFESTYLE_B.jpg" alt="Tease chocolate truffles styled in a luxury setting" loading="lazy">
-      </figure>
-      <figure class="gallery__item">
-        <img src="assets/images/LIFESTYLE_C.jpg" alt="Tease box in a sensual lifestyle scene" loading="lazy">
-      </figure>
-      <figure class="gallery__item">
-        <img src="assets/images/LIFESTYLE_D.jpg" alt="Tease packaging unboxed on a marble surface" loading="lazy">
-      </figure>
+    <div class="scenarios__grid">
+      <article class="scenario">
+        <div class="scenario__media">
+          <img src="assets/images/LIFESTYLE_A.jpg" alt="Tease for date night" loading="lazy">
+        </div>
+        <div class="scenario__body">
+          <span class="scenario__tag">Date Night</span>
+          <h3>Turn dinner into dessert.</h3>
+          <p>One truffle 30 minutes before. By the time the check arrives, the night has already started.</p>
+        </div>
+      </article>
+
+      <article class="scenario">
+        <div class="scenario__media">
+          <img src="assets/images/LIFESTYLE_B.jpg" alt="Tease for first time" loading="lazy">
+        </div>
+        <div class="scenario__body">
+          <span class="scenario__tag">First Time</span>
+          <h3>Less nerves. More you.</h3>
+          <p>A subtle confidence boost that takes the edge off — without the next-day fog of anything pharmaceutical.</p>
+        </div>
+      </article>
+
+      <article class="scenario">
+        <div class="scenario__media">
+          <img src="assets/images/LIFESTYLE_C.jpg" alt="Tease for long-term spark" loading="lazy">
+        </div>
+        <div class="scenario__body">
+          <span class="scenario__tag">Long-Term Spark</span>
+          <h3>Rewrite the routine.</h3>
+          <p>For couples who already have everything except the time and the spark. Tease brings the second one back.</p>
+        </div>
+      </article>
     </div>
+  </div>
+</section>
+
+<!-- ============ UGC / TIKTOK ============ -->
+<section class="section ugc" aria-labelledby="ugcTitle">
+  <div class="container">
+    <header class="section-header">
+      <span class="eyebrow">Real People · Real Reactions</span>
+      <h2 id="ugcTitle">As Seen on TikTok</h2>
+      <p class="text-muted">Hundreds of unfiltered reactions from real customers.</p>
+      <div class="divider-thin"></div>
+    </header>
+
+    <div class="ugc__grid">
+      <a class="ugc__item" href="#" aria-label="TikTok video 1">
+        <div class="ugc__media">
+          <img src="assets/images/Tease_HandHero.jpg" alt="TikTok reaction video">
+          <span class="ugc__play" aria-hidden="true">▶</span>
+        </div>
+        <span class="ugc__handle">@user1 · 2.4M views</span>
+      </a>
+      <a class="ugc__item" href="#" aria-label="TikTok video 2">
+        <div class="ugc__media">
+          <img src="assets/images/LIFESTYLE_D.jpg" alt="TikTok reaction video">
+          <span class="ugc__play" aria-hidden="true">▶</span>
+        </div>
+        <span class="ugc__handle">@user2 · 890K views</span>
+      </a>
+      <a class="ugc__item" href="#" aria-label="TikTok video 3">
+        <div class="ugc__media">
+          <img src="assets/images/Tease_ModelHero-Alt.jpg" alt="TikTok reaction video">
+          <span class="ugc__play" aria-hidden="true">▶</span>
+        </div>
+        <span class="ugc__handle">@user3 · 1.1M views</span>
+      </a>
+      <a class="ugc__item" href="#" aria-label="TikTok video 4">
+        <div class="ugc__media">
+          <img src="assets/images/LIFESTYLE_B.jpg" alt="TikTok reaction video">
+          <span class="ugc__play" aria-hidden="true">▶</span>
+        </div>
+        <span class="ugc__handle">@user4 · 530K views</span>
+      </a>
+    </div>
+
+    <p class="ugc__note">Placeholder thumbnails. Replace with real TikTok embeds when URLs are provided.</p>
   </div>
 </section>
 
