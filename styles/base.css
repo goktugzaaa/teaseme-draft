@@ -6,13 +6,18 @@
 /* ---------- Design Tokens ---------- */
 :root {
   /* Colors — aligned to teaseme.co brand */
-  --c-bg:          #0A0A0A;
-  --c-bg-alt:      #161210;
+  --c-bg:          #0A0807;
+  --c-bg-alt:      #1A0E10;
+  --c-bg-warm:     #221416;
+  --c-burgundy:    #2D0A0E;
+  --c-burgundy-deep: #1A0608;
   --c-cream:       #FAF6F0;
   --c-cream-dim:   #F1E3D9;
   --c-peach:       #E8D5C7;
+  --c-peach-deep:  #D4B8A4;
   --c-red:         #A42325;
   --c-red-deep:    #780406;
+  --c-rose:        #C9697A;
   --c-gold:        #C9A961;
   --c-brown:       #6B4423;
   --c-text:        #FAF6F0;

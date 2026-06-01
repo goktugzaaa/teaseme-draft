@@ -312,8 +312,9 @@ h1, h2, h3 { letter-spacing: -0.02em; }
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(10,10,10,0.65) 0%, rgba(10,10,10,0.15) 30%, rgba(10,10,10,0.85) 100%),
-    radial-gradient(ellipse at 80% 40%, rgba(0,0,0,0) 30%, rgba(0,0,0,0.4) 80%);
+    radial-gradient(ellipse 80% 50% at 30% 110%, rgba(164, 35, 37, 0.42) 0%, rgba(164, 35, 37, 0) 60%),
+    radial-gradient(ellipse 60% 40% at 80% 0%, rgba(120, 4, 6, 0.25) 0%, rgba(0,0,0,0) 70%),
+    linear-gradient(180deg, rgba(10,8,7,0.55) 0%, rgba(10,8,7,0.1) 30%, rgba(10,8,7,0.92) 100%);
 }
 
 .hero__grid {
@@ -491,13 +492,15 @@ h1, h2, h3 { letter-spacing: -0.02em; }
 
 /* ---------- Marquee ---------- */
 .marquee {
-  background: var(--c-cream);
+  background: linear-gradient(90deg, var(--c-cream) 0%, var(--c-peach) 50%, var(--c-cream) 100%);
   color: var(--c-text-dark);
   overflow: hidden;
   padding: var(--space-4) 0;
   border-top: 1px solid rgba(26,22,20,0.08);
   border-bottom: 1px solid rgba(26,22,20,0.08);
 }
+
+.marquee__dot { color: var(--c-red); }
 
 .marquee__track {
   display: inline-flex;
@@ -945,7 +948,9 @@ h1, h2, h3 { letter-spacing: -0.02em; }
 
 /* ---------- Scenarios full-bleed alternating ---------- */
 .scenarios {
-  background: var(--c-bg-alt);
+  background:
+    radial-gradient(ellipse at 0% 50%, rgba(164, 35, 37, 0.08) 0%, rgba(0,0,0,0) 50%),
+    var(--c-bg-warm);
   padding-block: var(--space-9);
   border-top: 1px solid var(--c-border);
 }
@@ -1094,7 +1099,7 @@ h1, h2, h3 { letter-spacing: -0.02em; }
 .receipt {
   display: block;
   background: var(--c-bg-alt);
-  border: 1px solid var(--c-border);
+  border: 1px solid rgba(201, 105, 122, 0.08);
   border-radius: var(--radius);
   overflow: hidden;
   break-inside: avoid;
@@ -1103,6 +1108,9 @@ h1, h2, h3 { letter-spacing: -0.02em; }
   width: 100%;
   transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease);
 }
+
+.receipt:nth-child(3n) { background: var(--c-bg-warm); }
+.receipt:nth-child(5n) { background: linear-gradient(180deg, var(--c-bg-warm), var(--c-bg-alt)); }
 
 @media (min-width: 1024px) {
   .receipt { margin-bottom: var(--space-5); }
@@ -1237,9 +1245,14 @@ h1, h2, h3 { letter-spacing: -0.02em; }
 
 /* ---------- Compare editorial ---------- */
 .compare {
-  background: var(--c-bg);
-  border-top: 1px solid var(--c-border);
+  background: linear-gradient(180deg, var(--c-peach) 0%, var(--c-cream) 100%);
+  color: var(--c-text-dark);
+  border-top: 1px solid rgba(26, 22, 20, 0.1);
 }
+
+.compare .section-mark { border-bottom-color: rgba(26, 22, 20, 0.18); }
+.compare .section-mark__num { color: var(--c-red); }
+.compare .section-mark__title { color: var(--c-text-dark); }
 
 .compare__table {
   max-width: 720px;
@@ -1254,12 +1267,12 @@ h1, h2, h3 { letter-spacing: -0.02em; }
   grid-template-columns: 1fr auto auto;
   padding: var(--space-4) 0;
   gap: var(--space-7);
-  border-bottom: 1px solid var(--c-border);
+  border-bottom: 1px solid rgba(26, 22, 20, 0.18);
   background: transparent !important;
 }
 
 .compare__head {
-  border-bottom-color: var(--c-cream-dim);
+  border-bottom-color: rgba(26, 22, 20, 0.3);
   align-items: baseline;
   text-transform: none;
   letter-spacing: 0;
@@ -1269,21 +1282,21 @@ h1, h2, h3 { letter-spacing: -0.02em; }
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.5rem;
-  color: var(--c-cream);
+  color: var(--c-red);
 }
 
 .compare__head-other {
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.5rem;
-  color: var(--c-text-muted);
+  color: #6B665E;
 }
 
-.compare__head > span:nth-child(2) { color: var(--c-cream); }
+.compare__head > span:nth-child(2) { color: var(--c-red); }
 
 .compare__feature {
   font-size: 1.0625rem;
-  color: var(--c-cream);
+  color: var(--c-text-dark);
 }
 
 .compare__cell {
@@ -1293,7 +1306,7 @@ h1, h2, h3 { letter-spacing: -0.02em; }
 }
 
 .compare__cell--yes { color: var(--c-red); }
-.compare__cell--no { color: var(--c-text-muted); opacity: 0.4; }
+.compare__cell--no { color: #6B665E; opacity: 0.5; }
 
 /* ---------- Reviews hero quote ---------- */
 .reviews {
@@ -1397,9 +1410,26 @@ h1, h2, h3 { letter-spacing: -0.02em; }
 
 /* ---------- Founder editorial ---------- */
 .founder {
-  background: var(--c-bg);
+  background:
+    radial-gradient(ellipse at 75% 25%, rgba(201, 105, 122, 0.28) 0%, rgba(201, 105, 122, 0) 55%),
+    radial-gradient(ellipse at 20% 80%, rgba(164, 35, 37, 0.18) 0%, rgba(0,0,0,0) 50%),
+    linear-gradient(160deg, #3A0F14 0%, var(--c-burgundy) 40%, var(--c-burgundy-deep) 100%);
   border-top: 1px solid var(--c-border);
+  position: relative;
+  overflow: hidden;
 }
+
+.founder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.6  0 0 0 0 0.2  0 0 0 0 0.2  0 0 0 0.18 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.founder .container { position: relative; z-index: 1; }
 
 .founder__inner { display: none; }
 
@@ -1434,7 +1464,10 @@ h1, h2, h3 { letter-spacing: -0.02em; }
 
 /* ---------- Final CTA editorial ---------- */
 .final-cta {
-  background: var(--c-bg);
+  background:
+    radial-gradient(ellipse at 80% 100%, rgba(164, 35, 37, 0.32) 0%, rgba(164, 35, 37, 0) 60%),
+    radial-gradient(ellipse at 20% 0%, rgba(120, 4, 6, 0.18) 0%, rgba(0,0,0,0) 55%),
+    var(--c-burgundy-deep);
   padding: var(--space-10) 0;
   border-top: 1px solid var(--c-border);
   text-align: left;
@@ -1442,7 +1475,16 @@ h1, h2, h3 { letter-spacing: -0.02em; }
   overflow: hidden;
 }
 
-.final-cta::before { display: none; }
+.final-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='5'/><feColorMatrix values='0 0 0 0 0.8  0 0 0 0 0.3  0 0 0 0 0.3  0 0 0 0.15 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  display: block;
+}
 
 .final-cta__title {
   font-family: var(--font-display);
