@@ -124,16 +124,16 @@
       </span>
     </button>
 
-    <!-- Brand -->
-    <a class="nav__brand" href="/" aria-label="Tease Me — Home">
-      <img src="assets/images/logo-hd.png" alt="Tease Me">
-    </a>
-
-    <!-- Desktop links -->
-    <nav class="nav__links" aria-label="Primary">
-      <a href="/pages/about">About</a>
-      <a href="/pages/contact">Contact</a>
-    </nav>
+    <!-- Brand + adjacent links cluster (desktop) -->
+    <div class="nav__lead">
+      <a class="nav__brand" href="/" aria-label="Tease Me — Home">
+        <img src="assets/images/logo-hd.png" alt="Tease Me">
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/pages/about">About</a>
+        <a href="/pages/contact">Contact</a>
+      </nav>
+    </div>
 
     <!-- Right actions -->
     <div class="nav__actions">
@@ -178,7 +178,7 @@
       <h1 class="hero__title">
         <span class="hero__title-line">The pleasure</span>
         <span class="hero__title-line hero__title-line--em">you always</span>
-        <span class="hero__title-line">wanted.</span>
+        <span class="hero__title-line hero__title-line--red">wanted.</span>
       </h1>
       <p class="hero__tagline">Feel it in 30 minutes. Or your money back.</p>
     </div>
@@ -239,7 +239,7 @@
 <!-- ============ BUNDLE / BUY ============ -->
 <section class="section buy" id="buy" aria-labelledby="buyTitle">
   <div class="container">
-    <header class="section-mark">
+    <header class="section-mark" data-reveal>
       <span class="section-mark__num">III.</span>
       <h2 id="buyTitle" class="section-mark__title">Order.</h2>
     </header>
@@ -320,27 +320,27 @@
 <!-- ============ RITUAL ============ -->
 <section class="section ritual" id="ritual" aria-labelledby="ritualTitle">
   <div class="container">
-    <header class="section-mark">
+    <header class="section-mark" data-reveal>
       <span class="section-mark__num">I.</span>
       <h2 id="ritualTitle" class="section-mark__title">The Ritual</h2>
     </header>
 
     <ol class="ritual__list">
-      <li class="ritual__row">
+      <li class="ritual__row" data-reveal>
         <span class="ritual__numeral">01</span>
         <div class="ritual__copy">
           <h3>Order in time.</h3>
           <p>Place your order before the night you want it. Free shipping on two boxes or more.</p>
         </div>
       </li>
-      <li class="ritual__row">
+      <li class="ritual__row" data-reveal>
         <span class="ritual__numeral">02</span>
         <div class="ritual__copy">
           <h3>Receive in private.</h3>
           <p>Hand-made and shipped discreetly in 3–7 business days. No branding on the outside. Ever.</p>
         </div>
       </li>
-      <li class="ritual__row">
+      <li class="ritual__row" data-reveal>
         <span class="ritual__numeral">03</span>
         <div class="ritual__copy">
           <h3>Experience in full.</h3>
@@ -364,38 +364,49 @@
       <em>No banned substances. No synthetic stimulants. No shortcuts.</em>
     </p>
 
-    <div class="ingredient-row">
-      <figure class="ingredient-row__media">
-        <img src="assets/images/TRUFFLE_ESPRESSO.jpg" alt="Fadogia Agrestis — espresso truffle" loading="lazy">
-      </figure>
-      <div class="ingredient-row__copy">
-        <span class="ingredient-row__index">01 — West African Shrub</span>
-        <h3 class="ingredient-row__name">Fadogia<br>Agrestis.</h3>
-        <p>Traditionally used to support male vitality and libido. Studied for its impact on testosterone and stamina.</p>
-      </div>
-    </div>
+    <ul class="herbs">
+      <li class="herb" data-reveal>
+        <div class="herb__lead">
+          <span class="herb__num">01</span>
+          <span class="herb__origin">West African Shrub</span>
+        </div>
+        <h3 class="herb__name">Fadogia <em>Agrestis</em></h3>
+        <ul class="herb__tags" aria-label="Properties">
+          <li>Vitality</li>
+          <li>Testosterone support</li>
+          <li>Stamina</li>
+        </ul>
+        <p class="herb__copy">Traditionally used to support male vitality and libido. Studied for its impact on testosterone and stamina.</p>
+      </li>
 
-    <div class="ingredient-row ingredient-row--reverse">
-      <figure class="ingredient-row__media">
-        <img src="assets/images/TRUFFLE_MILK_CHOC.jpg" alt="Tongkat Ali — milk chocolate truffle" loading="lazy">
-      </figure>
-      <div class="ingredient-row__copy">
-        <span class="ingredient-row__index">02 — Southeast Asian Root</span>
-        <h3 class="ingredient-row__name">Tongkat<br>Ali.</h3>
-        <p>A centuries-old aphrodisiac. Valued for boosting energy, mood, and sexual performance — for all genders.</p>
-      </div>
-    </div>
+      <li class="herb" data-reveal>
+        <div class="herb__lead">
+          <span class="herb__num">02</span>
+          <span class="herb__origin">Southeast Asian Root</span>
+        </div>
+        <h3 class="herb__name">Tongkat <em>Ali</em></h3>
+        <ul class="herb__tags" aria-label="Properties">
+          <li>Energy</li>
+          <li>Mood</li>
+          <li>All genders</li>
+        </ul>
+        <p class="herb__copy">A centuries-old aphrodisiac. Valued for boosting energy, mood, and sexual performance — for all genders.</p>
+      </li>
 
-    <div class="ingredient-row">
-      <figure class="ingredient-row__media">
-        <img src="assets/images/NUTRITION_FACTS.jpg" alt="Ginger ingredient detail" loading="lazy">
-      </figure>
-      <div class="ingredient-row__copy">
-        <span class="ingredient-row__index">03 — Tropical Rhizome</span>
-        <h3 class="ingredient-row__name">Ginger.</h3>
-        <p>Warming. Circulation-enhancing. Known across cultures as a natural arousal stimulant.</p>
-      </div>
-    </div>
+      <li class="herb" data-reveal>
+        <div class="herb__lead">
+          <span class="herb__num">03</span>
+          <span class="herb__origin">Tropical Rhizome</span>
+        </div>
+        <h3 class="herb__name"><em>Ginger</em></h3>
+        <ul class="herb__tags" aria-label="Properties">
+          <li>Warming</li>
+          <li>Circulation</li>
+          <li>Arousal stimulant</li>
+        </ul>
+        <p class="herb__copy">Warming. Circulation-enhancing. Known across cultures as a natural arousal stimulant.</p>
+      </li>
+    </ul>
 
     <p class="ingredients__footnote">Not gluten-free. May contain nuts. Limit 2 truffles per person, per day.</p>
   </div>
@@ -408,8 +419,8 @@
     <h2 id="scenariosTitle" class="section-mark__title">Made for<br>the moment.</h2>
   </header>
 
-  <article class="scene">
-    <figure class="scene__media">
+  <article class="scene" data-reveal>
+    <figure class="scene__media" data-parallax="0.08">
       <img src="assets/images/LIFESTYLE_A.jpg" alt="Date night with Tease" loading="lazy">
     </figure>
     <div class="scene__copy">
@@ -420,8 +431,8 @@
     </div>
   </article>
 
-  <article class="scene scene--reverse">
-    <figure class="scene__media">
+  <article class="scene scene--reverse" data-reveal>
+    <figure class="scene__media" data-parallax="0.08">
       <img src="assets/images/LIFESTYLE_B.jpg" alt="First time with Tease" loading="lazy">
     </figure>
     <div class="scene__copy">
@@ -432,8 +443,8 @@
     </div>
   </article>
 
-  <article class="scene">
-    <figure class="scene__media">
+  <article class="scene" data-reveal>
+    <figure class="scene__media" data-parallax="0.08">
       <img src="assets/images/LIFESTYLE_C.jpg" alt="Long-term spark with Tease" loading="lazy">
     </figure>
     <div class="scene__copy">
@@ -448,137 +459,54 @@
 <!-- ============ RECEIPTS / SOCIAL PROOF ============ -->
 <section class="section receipts" aria-labelledby="receiptsTitle">
   <div class="container">
-    <header class="section-mark">
+    <header class="section-mark" data-reveal>
       <span class="section-mark__num">V.</span>
       <h2 id="receiptsTitle" class="section-mark__title">The Receipts.</h2>
     </header>
-    <p class="receipts__lede">Texts at 1am. Videos posted next morning. Reviews that didn't need any prompting.</p>
+    <p class="receipts__lede">Texts sent at 1 a.m. Reviews that didn't need any prompting. The kind of feedback you don't put in an ad — but that's exactly why it works.</p>
 
-    <div class="receipts__grid">
-      <!-- Short quote (small card) -->
-      <article class="receipt receipt--quote">
-        <blockquote>“Better than the wine. And we were drinking good wine.”</blockquote>
-        <div class="receipt__credit">
-          <span class="receipt__source">Verified review</span>
-          <span class="receipt__handle">D. &amp; M.</span>
-        </div>
-      </article>
-
-      <!-- Video — tall -->
-      <a class="receipt receipt--video" href="https://www.tiktok.com/discover/teaseme-chocolate" target="_blank" rel="noopener" aria-label="Watch on TikTok">
-        <div class="receipt__media">
-          <img src="assets/images/Tease_HandHero.jpg" alt="TikTok reaction" loading="lazy">
-          <span class="receipt__play" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0v14l12-7z"/></svg>
-          </span>
-        </div>
-        <div class="receipt__caption">“Babe — order it. now.”</div>
-        <div class="receipt__credit">
-          <span class="receipt__source">Posted on <strong>TikTok</strong></span>
-          <span class="receipt__stats">
-            <span aria-label="likes">♥ 312k</span>
-            <span aria-label="comments">💬 1.2k</span>
-          </span>
-        </div>
-      </a>
-
-      <!-- Real DM 1 -->
-      <article class="receipt receipt--screenshot">
-        <div class="receipt__shot">
+    <div class="receipts__grid receipts__grid--columns">
+      <!-- COLUMN 1 -->
+      <div class="receipts__col">
+        <article class="receipt receipt--screenshot" data-reveal>
           <img src="assets/images/TESTIMONIAL_A.webp" alt="Customer DM: '10/10 would recommend'" loading="lazy">
-        </div>
-        <div class="receipt__credit">
-          <span class="receipt__source">DM · customer to us</span>
-          <span class="receipt__handle">via Instagram</span>
-        </div>
-      </article>
+          <span class="receipt__tag">DM · Instagram</span>
+        </article>
 
-      <!-- Big quote (medium) -->
-      <article class="receipt receipt--quote receipt--quote-lg">
-        <span class="stars" aria-hidden="true">★★★★★</span>
-        <blockquote>“Three weeks in. Reordering before I run out. This is part of the routine now.”</blockquote>
-        <div class="receipt__credit">
-          <span class="receipt__source">Verified review</span>
-          <span class="receipt__handle">J. Chen · Brooklyn</span>
-        </div>
-      </article>
+        <article class="receipt receipt--quote" data-reveal>
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <blockquote>“Better than the wine. And we were drinking good wine.”</blockquote>
+          <span class="receipt__tag">D. &amp; M. · Verified Buyer</span>
+        </article>
+      </div>
 
-      <!-- Video 2 — short -->
-      <a class="receipt receipt--video receipt--video-sm" href="https://www.tiktok.com/discover/teaseme-chocolate" target="_blank" rel="noopener" aria-label="Watch on TikTok">
-        <div class="receipt__media">
-          <img src="assets/images/LIFESTYLE_D.jpg" alt="TikTok reaction" loading="lazy">
-          <span class="receipt__play" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0v14l12-7z"/></svg>
-          </span>
-        </div>
-        <div class="receipt__caption">“Whatever you put in those — I need a refill.”</div>
-        <div class="receipt__credit">
-          <span class="receipt__source">Posted on <strong>TikTok</strong></span>
-          <span class="receipt__stats">
-            <span>♥ 89k</span>
-            <span>💬 412</span>
-          </span>
-        </div>
-      </a>
+      <!-- COLUMN 2 -->
+      <div class="receipts__col">
+        <article class="receipt receipt--quote receipt--quote-lg" data-reveal>
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <blockquote>“Three weeks in. Reordering before I run out. This is part of the <em>routine</em> now.”</blockquote>
+          <span class="receipt__tag">J. Chen · Brooklyn · Verified Buyer</span>
+        </article>
 
-      <!-- Real DM 2 -->
-      <article class="receipt receipt--screenshot">
-        <div class="receipt__shot">
-          <img src="assets/images/TESTIMONIAL_B.webp" alt="Customer DM: 'I'm going to be buying these all the time.'" loading="lazy">
-        </div>
-        <div class="receipt__credit">
-          <span class="receipt__source">DM · two-way conversation</span>
-          <span class="receipt__handle">via Instagram</span>
-        </div>
-      </article>
-
-      <!-- Real DM 3 (smaller asset) -->
-      <article class="receipt receipt--screenshot">
-        <div class="receipt__shot">
+        <article class="receipt receipt--screenshot" data-reveal>
           <img src="assets/images/TESTIMONIAL_C.webp" alt="Customer DM: 'My lady felt it IMMEDIATELY.'" loading="lazy">
-        </div>
-        <div class="receipt__credit">
-          <span class="receipt__source">DM · customer to us</span>
-          <span class="receipt__handle">via Instagram</span>
-        </div>
-      </article>
+          <span class="receipt__tag">DM · Instagram</span>
+        </article>
+      </div>
 
-      <!-- Big call-out quote -->
-      <article class="receipt receipt--quote receipt--quote-lg">
-        <span class="stars" aria-hidden="true">★★★★★</span>
-        <blockquote>“Subtle, fast, and the taste is incredible. Completely changed the energy of date night.”</blockquote>
-        <div class="receipt__credit">
-          <span class="receipt__source">Verified review</span>
-          <span class="receipt__handle">Daniel R. · LA</span>
-        </div>
-      </article>
+      <!-- COLUMN 3 -->
+      <div class="receipts__col">
+        <article class="receipt receipt--screenshot" data-reveal>
+          <img src="assets/images/TESTIMONIAL_B.webp" alt="Customer DM: 'I'm going to be buying these all the time.'" loading="lazy">
+          <span class="receipt__tag">DM · two-way conversation</span>
+        </article>
 
-      <!-- Video 3 -->
-      <a class="receipt receipt--video" href="https://www.tiktok.com/discover/teaseme-chocolate" target="_blank" rel="noopener" aria-label="Watch on TikTok">
-        <div class="receipt__media">
-          <img src="assets/images/Tease_ModelHero-Alt.jpg" alt="TikTok reaction" loading="lazy">
-          <span class="receipt__play" aria-hidden="true">
-            <svg width="14" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0v14l12-7z"/></svg>
-          </span>
-        </div>
-        <div class="receipt__caption">“Tonight starts with one bite.”</div>
-        <div class="receipt__credit">
-          <span class="receipt__source">Posted on <strong>TikTok</strong></span>
-          <span class="receipt__stats">
-            <span>♥ 27k</span>
-            <span>💬 75</span>
-          </span>
-        </div>
-      </a>
-
-      <!-- Tiny one-liner -->
-      <article class="receipt receipt--quote">
-        <blockquote>“Customer for life.”</blockquote>
-        <div class="receipt__credit">
-          <span class="receipt__source">Verified review</span>
-          <span class="receipt__handle">Sarah M.</span>
-        </div>
-      </article>
+        <article class="receipt receipt--quote" data-reveal>
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <blockquote>“Subtle, fast, and the taste is incredible. Completely changed the energy of date night.”</blockquote>
+          <span class="receipt__tag">Daniel R. · LA · Verified Buyer</span>
+        </article>
+      </div>
     </div>
 
     <p class="receipts__note">Real customer messages and reviews. Names abbreviated for privacy.</p>
@@ -588,10 +516,12 @@
 <!-- ============ COMPARE ============ -->
 <section class="section compare" aria-labelledby="compareTitle">
   <div class="container">
-    <header class="section-mark">
+    <header class="section-mark" data-reveal>
       <span class="section-mark__num">VI.</span>
       <h2 id="compareTitle" class="section-mark__title">No competition.</h2>
     </header>
+
+    <p class="compare__lede">Most aphrodisiac products cut corners. We didn't. Here's where Tease stands apart.</p>
 
     <div class="compare__table" role="table" aria-label="Tease compared to other brands">
       <div class="compare__head" role="row">
@@ -683,7 +613,7 @@
 <!-- ============ FOUNDER ============ -->
 <section class="section founder" aria-labelledby="founderTitle">
   <div class="container">
-    <header class="section-mark">
+    <header class="section-mark" data-reveal>
       <span class="section-mark__num">VIII.</span>
       <h2 id="founderTitle" class="section-mark__title">From<br>the founder.</h2>
     </header>
@@ -699,7 +629,7 @@
 <!-- ============ FAQ ============ -->
 <section class="section faq" id="faq" aria-labelledby="faqTitle">
   <div class="container">
-    <header class="section-mark">
+    <header class="section-mark" data-reveal>
       <span class="section-mark__num">IX.</span>
       <h2 id="faqTitle" class="section-mark__title">You asked.</h2>
     </header>
@@ -850,6 +780,7 @@
 <script src="scripts/age-gate.js"></script>
 <script src="scripts/accordion.js"></script>
 <script src="scripts/sticky-cta.js"></script>
+<script src="scripts/reveal.js"></script>
 
 </body>
 </html>
