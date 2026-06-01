@@ -5,21 +5,21 @@
 
 /* ---------- Design Tokens ---------- */
 :root {
-  /* Colors */
+  /* Colors — aligned to teaseme.co brand */
   --c-bg:          #0A0A0A;
-  --c-bg-alt:      #141414;
-  --c-cream:       #F5F0E8;
-  --c-cream-dim:   #E8E0D2;
+  --c-bg-alt:      #161210;
+  --c-cream:       #FAF6F0;
+  --c-cream-dim:   #F1E3D9;
+  --c-peach:       #E8D5C7;
+  --c-red:         #A42325;
+  --c-red-deep:    #780406;
   --c-gold:        #C9A961;
-  --c-gold-dim:    #8F7740;
-  --c-red:         #B91C1C;
-  --c-red-deep:    #7F1010;
   --c-brown:       #6B4423;
-  --c-text:        #F5F0E8;
-  --c-text-muted:  #A09890;
-  --c-text-dark:   #1A1A1A;
-  --c-border:      rgba(245, 240, 232, 0.12);
-  --c-border-strong: rgba(245, 240, 232, 0.24);
+  --c-text:        #FAF6F0;
+  --c-text-muted:  rgba(250, 246, 240, 0.65);
+  --c-text-dark:   #1A1614;
+  --c-border:      rgba(250, 246, 240, 0.12);
+  --c-border-strong: rgba(250, 246, 240, 0.24);
 
   /* Typography */
   --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
@@ -199,17 +199,17 @@ p { max-width: 65ch; }
 .btn:active { transform: translateY(0); }
 
 .btn--primary {
-  background: var(--c-gold);
-  color: var(--c-bg);
+  background: var(--c-red);
+  color: var(--c-cream);
 }
-.btn--primary:hover { background: var(--c-cream); }
+.btn--primary:hover { background: var(--c-red-deep); }
 
 .btn--ghost {
   background: transparent;
   color: var(--c-text);
   border: 1px solid var(--c-border-strong);
 }
-.btn--ghost:hover { border-color: var(--c-gold); color: var(--c-gold); }
+.btn--ghost:hover { border-color: var(--c-cream); color: var(--c-cream); }
 
 .btn--red {
   background: var(--c-red);

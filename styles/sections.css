@@ -106,7 +106,7 @@
   text-transform: uppercase;
 }
 
-.nav__links a:hover { color: var(--c-gold); opacity: 1; }
+.nav__links a:hover { color: var(--c-red); opacity: 1; }
 
 @media (min-width: 1024px) {
   .nav__links { display: flex; }
@@ -124,7 +124,7 @@
   text-transform: uppercase;
 }
 
-.nav__cart:hover { border-color: var(--c-gold); color: var(--c-gold); opacity: 1; }
+.nav__cart:hover { border-color: var(--c-red); color: var(--c-red); opacity: 1; }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -216,7 +216,7 @@
   content: "";
   width: 4px;
   height: 4px;
-  background: var(--c-gold);
+  background: var(--c-red);
   border-radius: 50%;
 }
 
@@ -246,14 +246,14 @@
 }
 
 .ritual__step:hover {
-  border-color: var(--c-gold);
+  border-color: var(--c-red);
   transform: translateY(-4px);
 }
 
 .ritual__num {
   font-family: var(--font-display);
   font-size: 2.5rem;
-  color: var(--c-gold);
+  color: var(--c-red);
   font-style: italic;
   margin-bottom: var(--space-3);
 }
@@ -386,7 +386,7 @@
   font-family: var(--font-display);
   font-size: 2.5rem;
   font-style: italic;
-  color: var(--c-gold);
+  color: var(--c-red);
 }
 
 .product__price-compare {
@@ -420,7 +420,7 @@
 
 .product__bullets li::before {
   content: "✓";
-  color: var(--c-gold);
+  color: var(--c-red);
   flex-shrink: 0;
   font-weight: 600;
   margin-top: 1px;
@@ -442,8 +442,8 @@
 }
 
 .variant-pill[data-active="true"] {
-  border-color: var(--c-gold);
-  color: var(--c-gold);
+  border-color: var(--c-red);
+  color: var(--c-red);
   background: rgba(201,169,97,0.08);
 }
 
@@ -521,7 +521,7 @@
   color: var(--c-text-muted);
 }
 
-.compare__head > span:nth-child(2) { color: var(--c-gold); }
+.compare__head > span:nth-child(2) { color: var(--c-red); }
 
 .compare__feature { font-size: var(--fs-small); }
 
@@ -530,7 +530,7 @@
   font-size: 1.25rem;
 }
 
-.compare__cell--yes { color: var(--c-gold); }
+.compare__cell--yes { color: var(--c-red); }
 .compare__cell--no { color: var(--c-text-muted); opacity: 0.5; }
 
 /* ---------- Testimonials ---------- */
@@ -623,7 +623,7 @@
   font-size: var(--fs-eyebrow);
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--c-gold);
+  color: var(--c-red);
 }
 
 /* ---------- FAQ ---------- */
@@ -659,7 +659,7 @@
 
 .faq__item summary::-webkit-details-marker { display: none; }
 
-.faq__item summary:hover { color: var(--c-gold); }
+.faq__item summary:hover { color: var(--c-red); }
 
 .faq__icon {
   flex-shrink: 0;
@@ -725,7 +725,7 @@
 }
 
 .trust-bar__icon {
-  color: var(--c-gold);
+  color: var(--c-red);
   width: 28px;
   height: 28px;
 }
@@ -800,7 +800,7 @@
   font-size: var(--fs-eyebrow);
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--c-gold);
+  color: var(--c-red);
   margin-bottom: var(--space-4);
   font-weight: 600;
 }
@@ -836,7 +836,7 @@
   gap: var(--space-4);
 }
 
-.footer__social a:hover { color: var(--c-gold); opacity: 1; }
+.footer__social a:hover { color: var(--c-red); opacity: 1; }
 
 .footer__disclaimer {
   font-size: 0.75rem;
@@ -855,8 +855,8 @@
   right: var(--space-4);
   bottom: var(--space-4);
   z-index: var(--z-sticky);
-  background: var(--c-gold);
-  color: var(--c-bg);
+  background: var(--c-red);
+  color: var(--c-cream);
   padding: var(--space-4) var(--space-5);
   border-radius: 999px;
   display: flex;
