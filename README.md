@@ -2,7 +2,7 @@
 
 A clean, modern HTML/CSS homepage redesign for [teaseme.co](https://teaseme.co), built ready for drop-in Shopify Liquid integration.
 
-**Live preview:** _Vercel URL added on deploy_
+**Live preview:** https://teaseme-draft.vercel.app
 **Repository:** https://github.com/goktugzaaa/teaseme-draft
 
 ---
