@@ -56,7 +56,7 @@ h1, h2, h3 { letter-spacing: -0.02em; }
   justify-content: flex-end;
   position: relative;
   isolation: isolate;
-  padding: calc(64px + var(--space-7)) 0 var(--space-6);
+  padding: calc(96px + var(--space-7)) 0 var(--space-6);
 }
 
 .hero__overlay {
