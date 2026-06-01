@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "title": "Tease Brazilian Sex Chocolate – Natural Aphrodisiac Truffles | Tease Me",
+    "description": "Indulge in Tease Brazilian Sex Chocolate — hand-made aphrodisiac truffles crafted with Fadogia Agrestis, Tongkat Ali and Ginger. Trusted by 30,000+ customers. Discreet shipping. 7-day guarantee.",
+    "canonical": "https://teaseme.co/",
+    "og": {
+      "site_name": "Tease Me",
+      "title": "Tease Brazilian Sex Chocolate",
+      "description": "Indulge in the world of sensual delight with Tease, where every bite is a passionate journey that ignites your senses.",
+      "image": "/assets/images/Tease_ModelHero-Alt.jpg",
+      "type": "product"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Tease Brazilian Sex Chocolate",
+      "description": "Hand-made aphrodisiac truffles. Trusted by 30,000+ customers."
+    }
+  },
+
+  "brand": {
+    "name": "Tease Me",
+    "product": "Brazilian Sex Chocolate",
+    "tagline": "The Pleasure You Always Wanted",
+    "logo": "/assets/images/logo.png"
+  },
+
+  "nav": {
+    "links": [
+      { "label": "About", "href": "/pages/about" },
+      { "label": "Ingredients", "href": "#ingredients" },
+      { "label": "FAQ", "href": "#faq" },
+      { "label": "Contact", "href": "/pages/contact" }
+    ],
+    "cta": { "label": "Shop Now", "href": "#buy" },
+    "cart_url": "{{CART_URL}}"
+  },
+
+  "hero": {
+    "h1": "Brazilian Sex Chocolate — Hand-Made Aphrodisiac Truffles",
+    "eyebrow": "Crafted in Georgia · Shipped Discreetly",
+    "headline": "The Pleasure You Always Wanted",
+    "subheadline": "Four hand-made truffles. Three natural aphrodisiac herbs. One unforgettable night.",
+    "video": "/assets/video/hero.mp4",
+    "poster": "/assets/images/Tease_ModelHero-Alt.jpg",
+    "primary_cta": { "label": "Shop Tease — $39.95", "href": "#buy" },
+    "secondary_cta": { "label": "How It Works", "href": "#ritual" },
+    "trust_strip": [
+      "Over 100,000 truffles sold",
+      "Trusted by 30,000+ customers",
+      "FDA-approved facility",
+      "7-day money-back guarantee"
+    ]
+  },
+
+  "ritual": {
+    "h2": "The Ritual",
+    "intro": "Three steps. One experience.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Order",
+        "copy": "Order in time for your next encounter. Free shipping on 2+ boxes."
+      },
+      {
+        "number": "02",
+        "title": "Receive",
+        "copy": "Hand-made and shipped discreetly in 3–7 business days. No branding. Ever."
+      },
+      {
+        "number": "03",
+        "title": "Experience",
+        "copy": "Enjoy one truffle 30 minutes before intimacy. Effects last 1–3 hours, and strengthen with consistent use."
+      }
+    ]
+  },
+
+  "ingredients": {
+    "h2": "What's Inside",
+    "intro": "Three time-tested aphrodisiac herbs, folded into Barry Callebaut chocolate. No banned substances. No synthetic stimulants.",
+    "items": [
+      {
+        "name": "Fadogia Agrestis",
+        "origin": "West African shrub",
+        "copy": "Traditionally used to support male vitality and libido. Studied for its impact on testosterone and stamina.",
+        "image": "/assets/images/TRUFFLE_ESPRESSO.jpg"
+      },
+      {
+        "name": "Tongkat Ali",
+        "origin": "Southeast Asian root",
+        "copy": "A centuries-old aphrodisiac, valued for boosting energy, mood, and sexual performance for all genders.",
+        "image": "/assets/images/TRUFFLE_MILK_CHOC.jpg"
+      },
+      {
+        "name": "Ginger",
+        "origin": "Tropical rhizome",
+        "copy": "Warming, circulation-enhancing, and known across cultures as a natural arousal stimulant.",
+        "image": "/assets/images/NUTRITION_FACTS.jpg"
+      }
+    ],
+    "footnote": "Not gluten-free. May contain nuts. Limit 2 truffles per person per day."
+  },
+
+  "product": {
+    "h2": "Meet Tease",
+    "name": "Tease Chocolate — 4 Truffles per Box",
+    "price_current": "$39.95",
+    "price_compare": "$59.95",
+    "currency": "USD",
+    "variants": [
+      { "name": "Milk Chocolate", "image": "/assets/images/TRUFFLE_MILK_CHOC.jpg" },
+      { "name": "Espresso", "image": "/assets/images/TRUFFLE_ESPRESSO.jpg" }
+    ],
+    "box_image": "/assets/images/TEASE_BOX_D.jpg",
+    "bullets": [
+      "4 hand-made truffles per box",
+      "Take one 30 minutes before intimacy",
+      "Effects last 1–3 hours, up to 24 hours",
+      "Discreet, unbranded packaging",
+      "Free shipping on 2+ boxes",
+      "7-day money-back guarantee"
+    ],
+    "primary_cta": { "label": "Add to Cart — {{PRICE_CURRENT}}", "href": "{{ADD_TO_CART_URL}}" }
+  },
+
+  "gallery": {
+    "h2": "Made for the Moment",
+    "images": [
+      { "src": "/assets/images/LIFESTYLE_A.jpg", "alt": "Tease box on a beachside breakfast tray with cocktails and fresh fruit" },
+      { "src": "/assets/images/LIFESTYLE_B.jpg", "alt": "Tease chocolate truffles styled in a luxury setting" },
+      { "src": "/assets/images/LIFESTYLE_C.jpg", "alt": "Tease box presented in a sensual lifestyle scene" },
+      { "src": "/assets/images/LIFESTYLE_D.jpg", "alt": "Tease packaging unboxed on a marble surface" },
+      { "src": "/assets/images/Tease_HandHero.jpg", "alt": "Hand holding a Tease truffle with red nails on black background" }
+    ]
+  },
+
+  "compare": {
+    "h2": "Why Tease",
+    "intro": "Not every aphrodisiac product is created equal.",
+    "rows": [
+      { "feature": "No banned substances", "tease": true, "others": false },
+      { "feature": "Only herbal ingredients", "tease": true, "others": false },
+      { "feature": "Authentic Brazilian recipe", "tease": true, "others": false },
+      { "feature": "Hand-made to order", "tease": true, "others": false },
+      { "feature": "Premium Barry Callebaut chocolate", "tease": true, "others": false },
+      { "feature": "Never arrives melted", "tease": true, "others": false },
+      { "feature": "Money-back guarantee", "tease": true, "others": false }
+    ]
+  },
+
+  "testimonials": {
+    "h2": "Reviews",
+    "aggregate": { "rating": 4.8, "count": 1247 },
+    "items": [
+      {
+        "quote": "Yes these chocolates work — and they are so delicious. After eating one, you will have multiple orgasms. I'm a customer for life.",
+        "name": "Sarah M.",
+        "location": "Verified Buyer"
+      },
+      {
+        "quote": "We tried Tease for date night and it completely changed the energy. Subtle, fast, and the taste is incredible.",
+        "name": "Daniel R.",
+        "location": "Verified Buyer"
+      },
+      {
+        "quote": "I was skeptical at first. After the first truffle, I wasn't anymore. Confidence and connection — both up.",
+        "name": "Megan T.",
+        "location": "Verified Buyer"
+      },
+      {
+        "quote": "The packaging alone is luxury. The chocolate? Even better than the reviews say.",
+        "name": "Alex P.",
+        "location": "Verified Buyer"
+      }
+    ]
+  },
+
+  "founder": {
+    "h2": "From the Founder",
+    "copy": "Tease was born from a simple idea: intimacy deserves better than pills and powders. We took a centuries-old Brazilian recipe, paired it with the finest chocolate in the world, and made it by hand — in Georgia, USA. Every box is a small batch. Every truffle is made to order.",
+    "signature": "— The Tease Team"
+  },
+
+  "faq": {
+    "h2": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Is Tease safe?",
+        "a": "Yes. Tease truffles contain no illicit drugs or banned substances like DHEA. All truffles are produced in a state-of-the-art FDA-approved facility in Georgia, USA."
+      },
+      {
+        "q": "Can both men and women enjoy Tease?",
+        "a": "Yes. Tease is crafted using ingredients that are safe and effective for all genders."
+      },
+      {
+        "q": "Who should not take Tease?",
+        "a": "Tease is not intended for use by children under 18. If pregnant, nursing, taking medication, or managing a medical condition, consult your doctor before use."
+      },
+      {
+        "q": "Where is Tease made?",
+        "a": "Hand-made in Georgia, USA using an authentic Brazilian recipe enhanced with aphrodisiac herbs and Barry Callebaut chocolate."
+      },
+      {
+        "q": "How is Tease shipped?",
+        "a": "Always discreetly. Tease ships in a padded envelope or unbranded temperature-controlled poly-mailer. The Tease name never appears on external packaging."
+      },
+      {
+        "q": "How long do the effects last?",
+        "a": "Most customers report effects lasting 1–3 hours, with lingering benefits up to 24 hours. Effects strengthen with consistent use."
+      },
+      {
+        "q": "How should I store Tease?",
+        "a": "Frozen: up to 6 months. Refrigerated: 4 weeks. Room temperature: 1 week."
+      },
+      {
+        "q": "What is the refund policy?",
+        "a": "If you're not completely satisfied, message us within 7 days of delivery for a full refund — no questions asked. Applies to the first box only. Excludes shipping, melt protection, and incorrect address entries."
+      }
+    ]
+  },
+
+  "trust_bar": {
+    "items": [
+      { "icon": "shield", "label": "FDA-approved facility" },
+      { "icon": "lock", "label": "Discreet packaging" },
+      { "icon": "refresh", "label": "7-day money-back" },
+      { "icon": "truck", "label": "Free shipping 2+ boxes" }
+    ]
+  },
+
+  "final_cta": {
+    "h2": "Tonight Starts With One Bite",
+    "copy": "Order in time for your next encounter.",
+    "button": { "label": "Shop Tease — {{PRICE_CURRENT}}", "href": "{{ADD_TO_CART_URL}}" }
+  },
+
+  "footer": {
+    "tagline": "Hand-made in Georgia, USA · Shipped discreetly worldwide",
+    "columns": [
+      {
+        "heading": "Shop",
+        "links": [
+          { "label": "Brazilian Sex Chocolate", "href": "/" },
+          { "label": "Bundle & Save", "href": "#buy" }
+        ]
+      },
+      {
+        "heading": "Company",
+        "links": [
+          { "label": "About", "href": "/pages/about" },
+          { "label": "Contact", "href": "/pages/contact" }
+        ]
+      },
+      {
+        "heading": "Policies",
+        "links": [
+          { "label": "Refund policy", "href": "/policies/refund-policy" },
+          { "label": "Privacy policy", "href": "/policies/privacy-policy" },
+          { "label": "Terms of service", "href": "/policies/terms-of-service" },
+          { "label": "Shipping policy", "href": "/policies/shipping-policy" }
+        ]
+      }
+    ],
+    "social": [
+      { "platform": "Instagram", "href": "https://instagram.com/teaseme" },
+      { "platform": "TikTok", "href": "https://tiktok.com/@teaseme" },
+      { "platform": "Facebook", "href": "https://facebook.com/teaseme" },
+      { "platform": "X", "href": "https://x.com/teaseme" },
+      { "platform": "YouTube", "href": "https://youtube.com/@teaseme" }
+    ],
+    "payment_methods": ["amex", "applepay", "discover", "googlepay", "mastercard", "paypal", "shoppay", "visa"],
+    "copyright": "© 2026 Tease Me. All rights reserved.",
+    "disclaimer": "Statements have not been evaluated by the FDA. Not intended to diagnose, treat, cure, or prevent any disease. 18+ only."
+  },
+
+  "age_gate": {
+    "headline": "Are you 18 or older?",
+    "copy": "This site contains adult-oriented content. By entering, you confirm you are of legal age in your jurisdiction.",
+    "confirm": "Yes, I'm 18+",
+    "deny": "No, take me back"
+  },
+
+  "tokens": {
+    "PRICE_CURRENT": "$39.95",
+    "PRICE_COMPARE": "$59.95",
+    "ADD_TO_CART_URL": "/cart/add",
+    "CART_URL": "/cart",
+    "PRODUCT_TITLE": "Tease Brazilian Sex Chocolate"
+  }
+}
