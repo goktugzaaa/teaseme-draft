@@ -1057,6 +1057,181 @@ h1, h2, h3 { letter-spacing: -0.02em; }
   max-width: 50ch;
 }
 
+/* ---------- Receipts / Social Proof ---------- */
+.receipts {
+  background: var(--c-bg);
+  border-top: 1px solid var(--c-border);
+}
+
+.receipts__lede {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.125rem, 1.2vw + 0.7rem, 1.5rem);
+  line-height: 1.35;
+  color: var(--c-text-muted);
+  max-width: 56ch;
+  margin: calc(-1 * var(--space-5)) 0 var(--space-7);
+}
+
+.receipts__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .receipts__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .receipts__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.receipt {
+  display: flex;
+  flex-direction: column;
+  background: var(--c-bg-alt);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+
+.receipt:hover {
+  border-color: var(--c-red);
+  transform: translateY(-2px);
+}
+
+/* Video variant */
+.receipt--video .receipt__media {
+  position: relative;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+}
+
+.receipt--video .receipt__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--dur-slow) var(--ease);
+}
+
+.receipt--video:hover .receipt__media img { transform: scale(1.04); }
+
+.receipt__play {
+  position: absolute;
+  bottom: var(--space-3);
+  left: var(--space-3);
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--c-cream);
+  color: var(--c-bg);
+  border-radius: 50%;
+  padding-left: 3px;
+}
+
+/* SMS variant */
+.receipt--sms { background: var(--c-bg-alt); }
+
+.receipt__sms {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  flex: 1;
+  justify-content: center;
+}
+
+.receipt__sms-from {
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.receipt__bubble {
+  align-self: flex-start;
+  max-width: 85%;
+  background: rgba(250, 246, 240, 0.08);
+  color: var(--c-cream);
+  padding: 10px 14px;
+  border-radius: 16px 16px 16px 4px;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+
+.receipt__bubble--out {
+  align-self: flex-end;
+  background: var(--c-red);
+  color: var(--c-cream);
+  border-radius: 16px 16px 4px 16px;
+}
+
+/* Quote variant */
+.receipt--quote {
+  padding: var(--space-6);
+  gap: var(--space-4);
+  background: linear-gradient(180deg, rgba(164,35,37,0.06), var(--c-bg-alt));
+}
+
+.receipt--quote .stars {
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+}
+
+.receipt--quote blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.375rem;
+  line-height: 1.3;
+  color: var(--c-cream);
+  flex: 1;
+}
+
+/* Meta footer (all variants) */
+.receipt__meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-top: 1px solid var(--c-border);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+  margin-top: auto;
+}
+
+.receipt--quote .receipt__meta {
+  border-top: 0;
+  padding: 0;
+  margin-top: var(--space-3);
+}
+
+.receipt__source { color: var(--c-text-muted); }
+.receipt__handle { color: var(--c-cream); font-style: italic; font-family: var(--font-display); letter-spacing: 0.04em; text-transform: none; font-size: 0.9375rem; }
+
+.receipts__note {
+  margin-top: var(--space-7);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+  opacity: 0.6;
+  font-style: italic;
+  text-align: right;
+}
+
 /* ---------- Compare editorial ---------- */
 .compare {
   background: var(--c-bg);

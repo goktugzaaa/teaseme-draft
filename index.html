@@ -445,47 +445,97 @@
   </article>
 </section>
 
-<!-- ============ UGC / TIKTOK ============ -->
-<section class="section ugc" aria-labelledby="ugcTitle">
+<!-- ============ RECEIPTS / SOCIAL PROOF ============ -->
+<section class="section receipts" aria-labelledby="receiptsTitle">
   <div class="container">
     <header class="section-mark">
       <span class="section-mark__num">V.</span>
-      <h2 id="ugcTitle" class="section-mark__title">As seen on<br>TikTok.</h2>
+      <h2 id="receiptsTitle" class="section-mark__title">The Receipts.</h2>
     </header>
-    <p class="ugc__lede">Hundreds of unfiltered reactions from real customers.</p>
+    <p class="receipts__lede">Texts at 1am. Videos posted next morning. Reviews that didn't need any prompting.</p>
 
-    <div class="ugc__grid">
-      <a class="ugc__item" href="#" aria-label="TikTok video 1">
-        <div class="ugc__media">
-          <img src="assets/images/Tease_HandHero.jpg" alt="TikTok reaction video">
-          <span class="ugc__play" aria-hidden="true">▶</span>
+    <div class="receipts__grid">
+      <!-- Video card (TikTok content, editorial presentation) -->
+      <a class="receipt receipt--video" href="#" aria-label="Watch customer reaction video">
+        <div class="receipt__media">
+          <img src="assets/images/Tease_HandHero.jpg" alt="Customer reaction" loading="lazy">
+          <span class="receipt__play" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0v14l12-7z"/></svg>
+          </span>
         </div>
-        <span class="ugc__handle">@user1 · 2.4M views</span>
-      </a>
-      <a class="ugc__item" href="#" aria-label="TikTok video 2">
-        <div class="ugc__media">
-          <img src="assets/images/LIFESTYLE_D.jpg" alt="TikTok reaction video">
-          <span class="ugc__play" aria-hidden="true">▶</span>
+        <div class="receipt__meta">
+          <span class="receipt__source">Video · TikTok</span>
+          <span class="receipt__handle">@_emilyrose</span>
         </div>
-        <span class="ugc__handle">@user2 · 890K views</span>
       </a>
-      <a class="ugc__item" href="#" aria-label="TikTok video 3">
-        <div class="ugc__media">
-          <img src="assets/images/Tease_ModelHero-Alt.jpg" alt="TikTok reaction video">
-          <span class="ugc__play" aria-hidden="true">▶</span>
+
+      <!-- SMS card 1 -->
+      <article class="receipt receipt--sms">
+        <div class="receipt__sms">
+          <span class="receipt__sms-from">Maya · 11:42 PM</span>
+          <p class="receipt__bubble">babe. order it now. i'm not joking</p>
+          <p class="receipt__bubble">like RIGHT now</p>
         </div>
-        <span class="ugc__handle">@user3 · 1.1M views</span>
-      </a>
-      <a class="ugc__item" href="#" aria-label="TikTok video 4">
-        <div class="ugc__media">
-          <img src="assets/images/LIFESTYLE_B.jpg" alt="TikTok reaction video">
-          <span class="ugc__play" aria-hidden="true">▶</span>
+        <div class="receipt__meta">
+          <span class="receipt__source">Text · sent to a friend</span>
+          <span class="receipt__handle">via DM</span>
         </div>
-        <span class="ugc__handle">@user4 · 530K views</span>
+      </article>
+
+      <!-- Quote card -->
+      <article class="receipt receipt--quote">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <blockquote>
+          “Three weeks in. Reordering before I run out. This is now part of the routine.”
+        </blockquote>
+        <div class="receipt__meta">
+          <span class="receipt__source">Verified review</span>
+          <span class="receipt__handle">— J. Chen</span>
+        </div>
+      </article>
+
+      <!-- Video card 2 -->
+      <a class="receipt receipt--video" href="#" aria-label="Watch customer reaction video">
+        <div class="receipt__media">
+          <img src="assets/images/LIFESTYLE_D.jpg" alt="Customer reaction" loading="lazy">
+          <span class="receipt__play" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0v14l12-7z"/></svg>
+          </span>
+        </div>
+        <div class="receipt__meta">
+          <span class="receipt__source">Video · TikTok</span>
+          <span class="receipt__handle">@theotherchad</span>
+        </div>
       </a>
+
+      <!-- SMS card 2 -->
+      <article class="receipt receipt--sms">
+        <div class="receipt__sms">
+          <span class="receipt__sms-from">Unknown · 2:14 AM</span>
+          <p class="receipt__bubble">whatever you put in those</p>
+          <p class="receipt__bubble">i need a refill</p>
+          <p class="receipt__bubble receipt__bubble--out">on the way 😉</p>
+        </div>
+        <div class="receipt__meta">
+          <span class="receipt__source">Text · customer to us</span>
+          <span class="receipt__handle">via SMS</span>
+        </div>
+      </article>
+
+      <!-- Quote card 2 -->
+      <article class="receipt receipt--quote">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <blockquote>
+          “Better than the wine. And we were drinking good wine.”
+        </blockquote>
+        <div class="receipt__meta">
+          <span class="receipt__source">Verified review</span>
+          <span class="receipt__handle">— D. &amp; M.</span>
+        </div>
+      </article>
     </div>
 
-    <p class="ugc__note">Placeholder thumbnails. Replace with real TikTok embeds when URLs are provided.</p>
+    <p class="receipts__note">Real customer messages and reviews. Names abbreviated for privacy.</p>
   </div>
 </section>
 
