@@ -1,3 +1,29 @@
+/* Nav drawer (mobile) */
+(function () {
+  const toggle = document.getElementById("navMenuToggle");
+  const drawer = document.getElementById("navDrawer");
+  if (!toggle || !drawer) return;
+
+  function setOpen(open) {
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    drawer.setAttribute("data-open", open ? "true" : "false");
+    document.body.style.overflow = open ? "hidden" : "";
+  }
+
+  toggle.addEventListener("click", function () {
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    setOpen(!isOpen);
+  });
+
+  drawer.querySelectorAll("a").forEach(function (a) {
+    a.addEventListener("click", function () { setOpen(false); });
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") setOpen(false);
+  });
+})();
+
 /* Sticky CTA — show after hero scrolls off-screen, hide near buy/final CTA. */
 (function () {
   const sticky = document.getElementById("stickyCta");

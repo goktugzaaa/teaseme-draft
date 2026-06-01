@@ -115,28 +115,51 @@
 </div>
 
 <!-- ============ NAV ============ -->
-<header class="nav" id="nav">
-  <div class="container">
-    <div class="nav__inner">
-      <a class="nav__brand" href="/" aria-label="Tease Me — Home">
-        <img src="assets/images/logo.png" alt="Tease Me">
+<header class="nav" id="nav" data-shopify-section="header">
+  <div class="nav__row">
+    <!-- Mobile: menu toggle. Desktop: hidden -->
+    <button class="nav__menu-toggle" type="button" aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false" id="navMenuToggle">
+      <span class="nav__menu-icon" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+
+    <!-- Brand -->
+    <a class="nav__brand" href="/" aria-label="Tease Me — Home">
+      <img src="assets/images/logo.png" alt="Tease Me">
+    </a>
+
+    <!-- Desktop links -->
+    <nav class="nav__links" aria-label="Primary">
+      <a href="/pages/about">About</a>
+      <a href="/pages/contact">Contact</a>
+    </nav>
+
+    <!-- Right actions -->
+    <div class="nav__actions">
+      <a class="nav__action" href="/account" aria-label="Account">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
       </a>
-      <nav class="nav__links" aria-label="Primary">
-        <a href="/pages/about">About</a>
-        <a href="/pages/contact">Contact</a>
-      </nav>
-      <div class="nav__actions">
-        <a class="nav__icon-link" href="/account" aria-label="Account">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
-        </a>
-        <a class="nav__cart" href="/cart" aria-label="Cart">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 6h15l-1.5 9H7.5L6 3H3"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
-          <span>Cart</span>
-          <span aria-hidden="true">(0)</span>
-        </a>
-      </div>
+      <a class="nav__action nav__action--cart" href="/cart" aria-label="Cart, 0 items">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <path d="M5 6h16l-2 11H7L5 3H2"/>
+          <circle cx="9" cy="20.5" r="1.5"/>
+          <circle cx="18" cy="20.5" r="1.5"/>
+        </svg>
+        <span class="nav__cart-count" aria-hidden="true">0</span>
+      </a>
     </div>
   </div>
+
+  <!-- Mobile drawer -->
+  <nav class="nav__drawer" id="navDrawer" aria-label="Mobile" data-open="false">
+    <ul class="nav__drawer-list">
+      <li><a href="/pages/about">About</a></li>
+      <li><a href="/pages/contact">Contact</a></li>
+      <li><a href="/account">Account</a></li>
+      <li><a href="/cart">Cart</a></li>
+    </ul>
+  </nav>
 </header>
 
 <!-- ============ HERO ============ -->
